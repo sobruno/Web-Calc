@@ -1,0 +1,87 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    height: 100dvh;
+    justify-content: center;
+    align-items: center;
+    
+    font-family: "Share Tech", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    background-color: #B3C3FF;
+}
+
+header{
+    margin-bottom: 5dvh;
+    font-size: 200%;
+    text-align: center;
+}
+
+header h3{
+    font-size: 50%;
+}
+
+.calc{
+    border: 5px solid black;
+    border-radius: 4px;
+    background-color: black;
+    padding: 5px;
+}
+
+table{
+    font-size: 150%;
+    max-width: 150dvw;
+    border-spacing: 3px;
+}
+
+th,td{
+    border-radius: 3px;
+    color: white;
+}
+
+td{
+    width: 3dvw;
+    height: 3dvw;
+    background-color: lightgray;
+    transition: 0.3s;
+    text-align: center;
+    padding: 3px;
+    border: 1px solid black;
+}
+
+td:hover{
+    scale: 1.1;
+    border-color:white;
+}
+
+th{
+    height: 10dvh;
+    min-width: 6dvw;
+    min-height: 6dvw;
+    font-size: 200%;
+}
+
+.operador{
+    background-color: #6D8BF2;
+}
+
+.numerador{
+    background-color: #7D89B3;
+}
+
+#resultado{
+    background-color: #F5B500;
+}
+
+#tela{
+    background-color: black;
+    color: #F5B500;
+    border: 2.5px solid white;
+    text-align: right;
+    padding-right: 5px;
+}
