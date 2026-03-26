@@ -52,6 +52,7 @@ td{
     text-align: center;
     padding: 3px;
     border: 1px solid black;
+    cursor: pointer;
 }
 
 td:hover{
@@ -84,4 +85,6 @@ th{
     border: 2.5px solid white;
     text-align: right;
     padding-right: 5px;
+    margin-bottom: 19px;
+    row-gap: 20px;
 }
