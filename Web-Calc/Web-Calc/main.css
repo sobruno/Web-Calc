@@ -1,90 +1,120 @@
-*{
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
-
-body{
+ 
+body {
     display: flex;
     flex-direction: column;
     height: 100dvh;
     justify-content: center;
     align-items: center;
-    
     font-family: "Share Tech", sans-serif;
     font-weight: 400;
     font-style: normal;
     background-color: #B3C3FF;
 }
-
-header{
+ 
+header {
     margin-bottom: 5dvh;
     font-size: 200%;
     text-align: center;
 }
-
-header h3{
-    font-size: 50%;
-}
-
-.calc{
+ 
+#Calculadora {
+    background-color: black;
     border: 5px solid black;
     border-radius: 4px;
-    background-color: black;
     padding: 5px;
-}
-
-table{
     font-size: 150%;
-    max-width: 150dvw;
-    border-spacing: 3px;
 }
-
-th,td{
+ 
+#Tela {
+    background-color: black;
+    border: 2.5px solid white;
     border-radius: 3px;
-    color: white;
-}
-
-td{
-    width: 3dvw;
-    height: 3dvw;
-    background-color: lightgray;
-    transition: 0.3s;
-    text-align: center;
-    padding: 3px;
-    border: 1px solid black;
-    cursor: pointer;
-}
-
-td:hover{
-    scale: 1.1;
-    border-color:white;
-}
-
-th{
-    height: 10dvh;
-    min-width: 6dvw;
+    padding: 5px 8px;
+    margin-bottom: 5px;
     min-height: 6dvw;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-end;
+    gap: 4px;
     font-size: 200%;
 }
-
-.operador{
+ 
+#historico {
+    color: rgba(245, 181, 0, 0.5);
+    font-size: 40%;
+    min-height: 1em;
+    word-break: break-all;
+    text-align: right;
+}
+ 
+#visor {
+    color: #F5B500;
+    font-size: 100%;
+    word-break: break-all;
+    text-align: right;
+    line-height: 1.1;
+}
+ 
+#Teclado {
+    display: grid;
+    grid-template-columns: repeat(5, 3dvw);
+    gap: 3px;
+}
+ 
+button {
+    width: 3dvw;
+    height: 3dvw;
+    border: 1px solid black;
+    border-radius: 3px;
+    cursor: pointer;
+    font: inherit;
+    color: white;
+    transition: scale 0.3s, border-color 0.3s;
+    user-select: none;
+    padding: 3px;
+    text-align: center;
+}
+ 
+button:hover {
+    scale: 1.1;
+    border-color: white;
+}
+ 
+button:active {
+    scale: 0.95;
+}
+ 
+.numerador {
+    background-color: #7D89B3;
+}
+ 
+.operador {
     background-color: #6D8BF2;
 }
-
-.numerador{
+ 
+#zero {
+    grid-column: span 3;
+    width: 100%;
     background-color: #7D89B3;
 }
 
-#resultado{
+#btn-igual, #btn-clear {
     background-color: #F5B500;
+    color: white;
+    font-weight: 700;
 }
 
-#tela{
-    background-color: black;
-    color: #F5B500;
-    border: 2.5px solid white;
-    text-align: right;
-    padding-right: 5px;
-    margin-bottom: 19px;
-    row-gap: 20px;
+/*
+Verão mobile pendente
+
+@media screen and (max-width: 768px) {
+
 }
+
+*/
