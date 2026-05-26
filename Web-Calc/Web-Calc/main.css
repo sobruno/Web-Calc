@@ -42,7 +42,7 @@ header {
     align-items: flex-end;
     justify-content: flex-end;
     gap: 4px;
-    font-size: 200%;
+    font-size: 120%;
 }
  
 #historico {
@@ -63,7 +63,7 @@ header {
  
 #Teclado {
     display: grid;
-    grid-template-columns: repeat(5, 3dvw);
+    grid-template-columns: repeat(5, 19.2%);
     gap: 3px;
 }
  
@@ -110,11 +110,36 @@ button:active {
     font-weight: 700;
 }
 
-/*
-Verão mobile pendente
 
 @media screen and (max-width: 768px) {
 
-}
+    #Calculadora{
+        padding: 3px;
+        font-size: 120%;
+    }
 
-*/
+    header{
+        font-size: 120%;
+    }
+
+    #Tela{
+        margin-bottom: 10px;
+        gap: 15px;
+    }
+
+    button{
+        width: 10dvw;
+        height: 10dvw;
+    }
+
+    #historico{
+        min-height: 2.5em;
+    }
+
+    #Teclado {
+        display: grid;
+        grid-template-columns: repeat(5, 10dvw);
+        gap: 2px;
+    }
+    
+}
